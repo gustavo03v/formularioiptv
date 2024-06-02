@@ -1,0 +1,68 @@
+{
+    "form": {
+      "title": "Formulário de Assinatura de IPTV",
+      "description": "Por favor, preencha as informações abaixo para assinar um plano de IPTV.",
+      "fields": [
+        {
+          "label": "Nome Completo",
+          "type": "text",
+          "name": "nome",
+          "required": true
+        },
+        {
+          "label": "Endereço de E-mail",
+          "type": "email",
+          "name": "email",
+          "required": true
+        },
+        {
+          "label": "Escolha o Plano",
+          "type": "select",
+          "name": "plano",
+          "options": [
+            {
+              "label": "Plano Básico: 100 canais por R$ 30/mês",
+              "value": "basico"
+            },
+            {
+              "label": "Plano Premium: 200 canais + conteúdo on-demand por R$ 50/mês",
+              "value": "premium"
+            },
+            {
+              "label": "Plano VIP: 300 canais + conteúdo on-demand + canais em HD por R$ 70/mês",
+              "value": "vip"
+            },
+            {
+              "label": "Mensal: R$ 25/mês",
+              "value": "mensal"
+            },
+            {
+              "label": "Trimestral: R$ 64,90/mês",
+              "value": "trimestral"
+            },
+            {
+              "label": "Semestral: R$ 139,90/mês",
+              "value": "semestral"
+            },
+            {
+              "label": "Anual: R$ 259,90",
+              "value": "anual"
+            }
+          ],
+          "required": true
+        },
+        {
+          "label": "Método de Pagamento",
+          "type": "static",
+          "name": "pagamento",
+          "value": "Pix",
+          "description": "Por favor, faça o pagamento via Pix usando a chave: be029f35-ed1c-493c-9278-52e9bca7f10e"
+        }
+      ],
+      "submit": {
+        "label": "Assinar",
+        "action": "/submit_form"
+      }
+    }
+  }
+  
