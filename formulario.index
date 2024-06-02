@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Assinatura de IPTV</title>
+</head>
+<body>
+    <h2>Formulário de Assinatura de IPTV</h2>
+    <p>Por favor, preencha as informações abaixo para assinar um plano de IPTV.</p>
+    
+    <form action="/submit_form" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Endereço de E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="plano">Escolha o Plano:</label>
+        <select id="plano" name="plano" required>
+            <option value="basico">Plano Básico: 100 canais por R$ 30/mês</option>
+            <option value="premium">Plano Premium: 200 canais + conteúdo on-demand por R$ 50/mês</option>
+            <option value="vip">Plano VIP: 300 canais + conteúdo on-demand + canais em HD por R$ 70/mês</option>
+            <option value="mensal">Mensal: R$ 25/mês</option>
+            <option value="trimestral">Trimestral: R$ 64,90/mês</option>
+            <option value="semestral">Semestral: R$ 139,90/mês</option>
+            <option value="anual">Anual: R$ 259,90</option>
+        </select><br><br>
+
+        <label for="pagamento">Método de Pagamento:</label>
+        <p>Pix: be029f35-ed1c-493c-9278-52e9bca7f10e</p><br>
+
+        <button type="submit">Assinar</button>
+    </form>
+</body>
+</html>
